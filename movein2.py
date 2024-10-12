@@ -74,4 +74,4 @@ if st.button("Submit"):
         st.warning("Please enter an address.")
 
 # Footer
-st.markdown("<div class='footer'><span style='font-size: 14px;'>Build by movein2 team</span></div>", unsafe_allow_html=True)
+st.markdown("<div class='footer'><span style='font-size: 20px;'>Build by movein2 team</span></div>", unsafe_allow_html=True)
