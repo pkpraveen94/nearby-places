@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # Set page configuration
-st.set_page_config(page_title="movein2.com", layout="centered")
+st.set_page_config(page_title="Find Nearby Shops Instantly", layout="centered")
 
 # Custom CSS to style the page
 st.markdown(
@@ -33,7 +33,7 @@ st.markdown(
 )
 
 # Heading
-st.markdown("<div class='center'>movein2.com</div>", unsafe_allow_html=True)
+st.markdown("<div class='center'>Find Nearby Shops Instantly</div>", unsafe_allow_html=True)
 
 # Subheading
 st.subheader("Type your address")
@@ -47,7 +47,7 @@ address = st.text_input("Enter the address", st.session_state["address"])
 
 # Display API functionality description
 st.markdown(
-    "<div class='description'>This will display the nearest Education Institutions, Transportations and Nearby Shops along with their distance details.</div>",
+    "<div class='description'>This will display the Nearest Shops along with their distance details.</div>",
     unsafe_allow_html=True,
 )
 
@@ -63,7 +63,7 @@ if st.button("Submit"):
         if response.status_code == 200:
             result = response.json()
             # Display results from the API
-            st.write("Here are the nearest Education Institutions, Transportations and Nearby Shops along with their distances from the address:")
+            st.write("Here are the Nearest Shops along with their distances from the address:")
             st.write(result)
         else:
             st.error("Error: Unable to fetch data. Please try again.")
@@ -74,4 +74,4 @@ if st.button("Submit"):
         st.warning("Please enter an address.")
 
 # Footer
-st.markdown("<div class='footer'><span style='font-size: 20px;'>Build by movein2 team</span></div>", unsafe_allow_html=True)
+st.markdown("<div class='footer'><span style='font-size: 20px;'>NearByNow</span></div>", unsafe_allow_html=True)
