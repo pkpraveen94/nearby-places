@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # Set page configuration
-st.set_page_config(page_title="Find Nearby Shops Instantly", layout="centered")
+st.set_page_config(page_title="Find Nearby Shops Instantly!", layout="centered")
 
 # Custom CSS to style the page
 st.markdown(
